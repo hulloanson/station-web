@@ -10,29 +10,38 @@
 	<html>
 		<head>
 			<title>Account</title>
+			<xsl:call-template name='header-head'/>
+			<link rel='stylesheet' href='/account.css' />
 		</head>
 		<body>
-			<xsl:call-template name='menubar'/>
-			<form method='POST' action='account'>
-				<label>
-					New password
-					<input type='password' name='password'/>
-				</label>
-				<button type='submit'>Change</button>
-			</form>
-			<p>Current avatar</p>
-			<img>
-				<xsl:attribute name='src'>/avatar/<xsl:value-of select='session/name'/></xsl:attribute>
-			</img>
-			<form method='POST' enctype="multipart/form-data">
-				<xsl:attribute name='action'>/avatar/<xsl:value-of select='session/name'/></xsl:attribute>
-				<label>
-					Change Avatar
-					<input type='file' name='avatar'/>
-				</label>
-				<p><i><small>Avatar image should be square, and will be scaled down to 64px x 64px</small></i></p>
-				<input type="submit" />
-			</form>
+			<xsl:call-template name='header'/>
+			<div class='container-content'>
+				<div class='account-function'>
+					<div class='title'>
+						<span>Account Information</span>
+					</div>
+					<form method='POST' action='account'>
+						<label>
+							New password
+							<input type='password' name='password'/>
+						</label>
+						<button type='submit'>Change</button>
+					</form>
+					<p>Current avatar</p>
+					<img>
+						<xsl:attribute name='src'>/avatar/<xsl:value-of select='session/name'/></xsl:attribute>
+					</img>
+					<form method='POST' enctype="multipart/form-data">
+						<xsl:attribute name='action'>/avatar/<xsl:value-of select='session/name'/></xsl:attribute>
+						<label>
+							Change Avatar
+							<input type='file' name='avatar'/>
+						</label>
+						<p><i><small>Avatar image should be square, and will be scaled down to 64px x 64px</small></i></p>
+						<input type="submit" />
+					</form>
+				</div>
+			</div>
 		</body>
 	</html>
 </xsl:template>

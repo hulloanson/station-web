@@ -11,7 +11,7 @@
 		<head>
 			<title>SysOp: Account</title>
 			<xsl:call-template name='header-head'/>
-			<link rel='stylesheet' type='text/css' href='account.css'/>
+			<link rel='stylesheet' type='text/css' href='/account.css'/>
 			<script type='application/ecmascript' src='delete_disable.js' async=''/>
 		</head>
 		<body>
