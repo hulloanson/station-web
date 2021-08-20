@@ -144,3 +144,23 @@ pre {
 	background-color: #dededf;
 	margin: 40px 55px;
 }
+input#avatar_upload {
+	/* visibility: hidden;
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display: inline-block; */
+	display: none;
+}
+label[for=avatar_upload] {
+		cursor: pointer;
+    margin: 0;
+    padding: 0;
+		text-decoration: underline;
+		display:block;
+}
+p#avatar-note {
+	margin: 4px 0;
+}
