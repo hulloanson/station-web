@@ -115,14 +115,17 @@ input[readonly]{
 	width: 90px;
 
 }
-.btn-submit input{
-	height: 100%;
-	width: 100%;
-	border-radius: 0 5px 5px 0;
-	border: solid 1px #dfe3e9;
+
+.btn-submit.right input {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
 	border-left: 0px;
+}
+.btn-submit input{
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	border: solid 1px #dfe3e9;
 	color: white;
 	font-size: 14px;
 	font-weight: bold;

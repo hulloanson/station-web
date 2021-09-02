@@ -53,7 +53,7 @@
 								</div>
 								<div class='attribute'>
 									<div class='attribute-name'></div>
-									<div class='btn-submit'>
+									<div class='btn-submit right'>
 										<input class='btn-add' type='submit' value='Add'/>
 									</div>
 								</div>
@@ -149,7 +149,7 @@
 									</div>
 									<div class='attribute'>
 										<div class='attribute-name'></div>
-										<div class='btn-submit'>
+										<div class='btn-submit right'>
 											<input class='btn-save' type='submit' value='Save'/>
 										</div>
 									</div>

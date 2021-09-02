@@ -19,7 +19,7 @@
 					const avatarPreview = document.getElementById('avatar_preview')
 					avatarInput.addEventListener('change', function(e) {
 						console.log(e)
-						const file = e.target.files[0]
+						const file = e.target.file>s[0]
 						console.log(file)
 						fileNameDisplay.innerText = file.name
 						const reader = new FileReader()
@@ -40,11 +40,44 @@
 						<span>Account Information</span>
 					</div>
 					<form method='POST' action='account'>
-						<label>
+						<div class='container-attributes'>
+							<div class='account-attribute attribute final-attribute'>
+								<div class='attribute-name'>
+									<label for='password-input'>New Password</label>
+								</div>
+								<div class='attribute-value'>
+									<input type='password' class='value final-value' name='password' id='password-input'/>
+								</div>
+							</div>
+							<div class='attribute'>
+								<div class='attribute-name'></div>
+								<div class='btn-submit right'>
+									<input class='btn-save' type='submit' value='Save'/>
+								</div>
+							</div>
+						</div>
+
+						<!-- <div class='attribute'>
+							<div class='attribute-name'>
+								<span for='password-input'>New password</span>
+							</div>
+							<div class='attribute-value'>
+								<input type='password' name='password' id='password-input'/>
+							</div>
+						</div>
+						<div class='attribute final-attribute'>
+							<div class='attribute-name'></div>
+							<div class='btn-submit right'>
+								<input class='btn-save' type='submit' value='Change'/>
+							</div>
+						</div> -->
+						<!-- <label>
 							New password
 							<input type='password' name='password'/>
 						</label>
-						<button type='submit'>Change</button>
+						<div class='btn-submit'>
+							<input type='submit' class='btn-save'>Change</input>
+						</div> -->
 					</form>
 					<p>Current avatar</p>
 					<img>
@@ -62,7 +95,9 @@
 						</div>
 						<input type='file' name='avatar' id="avatar_upload"/>
 						<p id='avatar-note'><i><small>Avatar image should be square, and will be scaled down to 64px x 64px</small></i></p>
-						<input type="submit" />
+						<div class='btn-submit'>
+							<input type="submit" />
+						</div>
 					</form>
 				</div>
 			</div>
